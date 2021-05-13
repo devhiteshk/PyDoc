@@ -1,0 +1,106 @@
+.tab {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+.nav-link {
+    text-decoration: none;
+    color: lemonchiffon;
+}
+
+#main-doc {
+    grid-column: 2 / 3;
+    background-color: #0a0a23;
+    color: cornsilk;
+}
+
+main {
+    float: left;
+    max-width: 100%;
+}
+
+#index-header {
+    position: fixed;
+    width: 20%;
+}
+
+h2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 28px;
+    color: crimson;
+}
+
+.navbar-headings {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0px;
+    border-bottom: 0.9px solid black;
+}
+
+#top-yellow-black-shade {
+    height: 10px;
+}
+
+#left-yellow-black-shade {
+    background: repeating-linear-gradient( 135deg, black 0px, black 40px, yellow 40px, yellow 80px);
+    width: 100px;
+    height: 100px;
+}
+
+article {
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.module-border-wrap {
+    max-width: 100%;
+    padding: 1rem;
+    position: relative;
+    background-color: black;
+    /*background: repeating-linear-gradient(
+      135deg,
+      #66BF6A 0px,
+      #66BF6A 40px,
+      #66BF6A 40px,
+      #66BF6A 80px
+    );*/
+    padding: 4px;
+}
+
+code {
+    background-color: lightsteelblue;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 720px) {
+    #navbar {
+        display: none !important;
+        visibility: hidden !important;
+    }
+    body {
+        margin: 8px;
+        font-family: "Work Sans", sans-serif;
+    }
+}
+
+@media only screen and (min-width: 721px) {
+    #navbar {
+        background-color: dimgray;
+        grid-column: 1 / 2;
+        width: 100%;
+        justify-items: center;
+        text-align: center;
+        color: white;
+        border-radius: 1px;
+    }
+    #technical-doc-div {
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+    body {
+        margin: 5px;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 110%;
+    }
+}
